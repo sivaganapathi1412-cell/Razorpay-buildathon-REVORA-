@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="s3-card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16A36A"/>
+      <stop offset="50%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#07110D"/>
+    </linearGradient>
+    <linearGradient id="s3-chip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DDF8E8"/>
+      <stop offset="100%" stop-color="#7EE2A8"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="200" cy="335" rx="140" ry="22" fill="#000000" opacity="0.35"/>
+  <g transform="translate(50, 90) rotate(8, 150, 100)">
+    <!-- 3D Card Rectangle -->
+    <rect x="20" y="30" width="260" height="160" rx="20" fill="url(#s3-card-grad)" stroke="#7EE2A8" stroke-width="3"/>
+    <!-- EMV Security Chip -->
+    <rect x="50" y="65" width="42" height="32" rx="6" fill="url(#s3-chip)" stroke="#07110D" stroke-width="1.5"/>
+    <line x1="50" y1="81" x2="92" y2="81" stroke="#07110D" stroke-width="1.5"/>
+    <line x1="71" y1="65" x2="71" y2="97" stroke="#07110D" stroke-width="1.5"/>
+    <!-- Contactless Waves -->
+    <path d="M 110 70 Q 116 80 110 90" stroke="#7EE2A8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M 118 65 Q 126 80 118 95" stroke="#7EE2A8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Card Details -->
+    <text x="50" y="145" fill="#FFFFFF" font-family="monospace" font-size="14" font-weight="bold" letter-spacing="2">•••• •••• •••• 4242</text>
+    <text x="50" y="170" fill="#7EE2A8" font-family="sans-serif" font-size="9" font-weight="bold" letter-spacing="1">RAZORPAY TEST MODE</text>
+    <!-- Brand Mark -->
+    <circle cx="235" cy="155" r="14" fill="#7EE2A8" opacity="0.8"/>
+    <circle cx="250" cy="155" r="14" fill="#16A36A" opacity="0.8"/>
+  </g>
+</svg>

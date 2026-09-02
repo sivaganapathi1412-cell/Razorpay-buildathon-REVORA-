@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="s3-shield-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16A36A"/>
+      <stop offset="60%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#07110D"/>
+    </linearGradient>
+    <radialGradient id="s3-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7EE2A8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7EE2A8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="200" cy="335" rx="130" ry="20" fill="#000000" opacity="0.35"/>
+  <circle cx="200" cy="190" r="120" fill="url(#s3-glow)"/>
+  <g transform="translate(90, 60) rotate(-2, 110, 130)">
+    <!-- 3D Armor Shield -->
+    <path d="M 110 30 Q 190 30 190 100 Q 190 190 110 240 Q 30 190 30 100 Q 30 30 110 30 Z" fill="url(#s3-shield-grad)" stroke="#7EE2A8" stroke-width="4"/>
+    <!-- Inner Trim Line -->
+    <path d="M 110 50 Q 170 50 170 105 Q 170 175 110 215 Q 50 175 50 105 Q 50 50 110 50 Z" stroke="#16A36A" stroke-width="2" fill="none"/>
+    <!-- Central Verified Checkmark -->
+    <circle cx="110" cy="130" r="38" fill="#07110D" stroke="#7EE2A8" stroke-width="3"/>
+    <path d="M 94 130 L 105 142 L 128 116" stroke="#7EE2A8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Policy Protected Tag -->
+    <rect x="55" y="195" width="110" height="22" rx="11" fill="#07110D" stroke="#7EE2A8" stroke-width="1.5"/>
+    <text x="110" y="210" text-anchor="middle" fill="#7EE2A8" font-family="sans-serif" font-size="8" font-weight="extrabold" letter-spacing="0.5">RECOVERY READY</text>
+  </g>
+</svg>

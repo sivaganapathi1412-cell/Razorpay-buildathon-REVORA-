@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B3D2E" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#062A20" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#07110D" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="shoe-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16A36A"/>
+      <stop offset="70%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#062A20"/>
+    </linearGradient>
+    <linearGradient id="apparel-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16A36A"/>
+      <stop offset="100%" stop-color="#07110D"/>
+    </linearGradient>
+    <linearGradient id="acc-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7EE2A8"/>
+      <stop offset="60%" stop-color="#16A36A"/>
+      <stop offset="100%" stop-color="#0B3D2E"/>
+    </linearGradient>
+    <linearGradient id="rec-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16A36A"/>
+      <stop offset="50%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#07110D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#16A36A" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#16A36A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="600" fill="url(#bg-grad)"/>
+  <circle cx="300" cy="270" r="220" fill="url(#glow)"/>
+
+  <!-- Geometric Grid Accent -->
+  <g stroke="#16A36A" stroke-width="1" opacity="0.15">
+    <line x1="100" y1="0" x2="100" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/>
+    <line x1="0" y1="100" x2="600" y2="100"/>
+    <line x1="0" y1="200" x2="600" y2="200"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="0" y1="400" x2="600" y2="400"/>
+    <line x1="0" y1="500" x2="600" y2="500"/>
+  </g>
+
+  <!-- Category & Brand Header Ribbon -->
+  <g transform="translate(40, 45)">
+    <rect x="0" y="0" width="140" height="24" rx="12" fill="#0B3D2E" stroke="#16A36A" stroke-width="1.5"/>
+    <text x="70" y="16" text-anchor="middle" fill="#7EE2A8" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="bold" letter-spacing="1">REVORA ATHLETICS</text>
+  </g>
+
+  <g transform="translate(430, 45)">
+    <rect x="0" y="0" width="130" height="24" rx="6" fill="#07110D" stroke="#0B3D2E" stroke-width="1.5"/>
+    <text x="65" y="16" text-anchor="middle" fill="#7EE2A8" font-family="monospace" font-size="11" font-weight="bold">REV-SHOE-04</text>
+  </g>
+
+  <!-- Central Visual Vector Object -->
+  
+            <g transform="translate(180, 160) scale(1.1)">
+                <!-- Modern Running Shoe Silhouette -->
+                <path d="M 40 180 Q 70 120 120 110 Q 180 100 240 130 Q 300 120 340 150 Q 370 180 360 210 Q 340 230 290 230 Q 200 235 120 235 Q 50 235 40 180 Z" fill="url(#shoe-grad)"/>
+                <!-- Midsole Foam Wave -->
+                <path d="M 40 200 Q 100 215 200 215 Q 300 210 360 195 L 365 220 Q 300 240 180 240 Q 80 240 38 215 Z" fill="#7EE2A8" opacity="0.95"/>
+                <!-- Upper Aerodynamic Swoop -->
+                <path d="M 120 115 Q 170 140 260 145" stroke="#DDF8E8" stroke-width="4" stroke-linecap="round" fill="none"/>
+                <path d="M 140 130 Q 190 155 280 158" stroke="#16A36A" stroke-width="3" stroke-linecap="round" fill="none"/>
+                <!-- Breathable Mesh Texture Dots -->
+                <circle cx="280" cy="140" r="2.5" fill="#7EE2A8" opacity="0.7"/>
+                <circle cx="295" cy="145" r="2.5" fill="#7EE2A8" opacity="0.7"/>
+                <circle cx="310" cy="150" r="2.5" fill="#7EE2A8" opacity="0.7"/>
+                <circle cx="270" cy="150" r="2.5" fill="#7EE2A8" opacity="0.7"/>
+                <circle cx="285" cy="155" r="2.5" fill="#7EE2A8" opacity="0.7"/>
+                <!-- Nitrogen Cushion Pods -->
+                <rect x="100" y="218" width="28" height="8" rx="4" fill="#0B3D2E"/>
+                <rect x="140" y="218" width="28" height="8" rx="4" fill="#0B3D2E"/>
+                <rect x="180" y="218" width="28" height="8" rx="4" fill="#0B3D2E"/>
+            </g>
+        
+
+  <!-- Footer Product Card Container -->
+  <g transform="translate(40, 480)">
+    <rect x="0" y="0" width="520" height="80" rx="18" fill="#0B3D2E" stroke="#16A36A" stroke-width="1.5" fill-opacity="0.95"/>
+    <text x="24" y="32" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" letter-spacing="-0.3">TrailGrip All-Terrain Summit Shoes</text>
+    <text x="24" y="56" fill="#DDF8E8" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500">Footwear & Running</text>
+    <g transform="translate(400, 18)">
+      <rect x="0" y="0" width="96" height="44" rx="10" fill="#07110D" stroke="#7EE2A8" stroke-width="1.5"/>
+      <text x="48" y="28" text-anchor="middle" fill="#7EE2A8" font-family="monospace" font-size="15" font-weight="bold">₹3,299</text>
+    </g>
+  </g>
+</svg>

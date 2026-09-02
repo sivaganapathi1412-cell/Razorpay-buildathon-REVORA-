@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B3D2E" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#062A20" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#07110D" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="shoe-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16A36A"/>
+      <stop offset="70%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#062A20"/>
+    </linearGradient>
+    <linearGradient id="apparel-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16A36A"/>
+      <stop offset="100%" stop-color="#07110D"/>
+    </linearGradient>
+    <linearGradient id="acc-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7EE2A8"/>
+      <stop offset="60%" stop-color="#16A36A"/>
+      <stop offset="100%" stop-color="#0B3D2E"/>
+    </linearGradient>
+    <linearGradient id="rec-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16A36A"/>
+      <stop offset="50%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#07110D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#16A36A" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#16A36A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="600" fill="url(#bg-grad)"/>
+  <circle cx="300" cy="270" r="220" fill="url(#glow)"/>
+
+  <!-- Geometric Grid Accent -->
+  <g stroke="#16A36A" stroke-width="1" opacity="0.15">
+    <line x1="100" y1="0" x2="100" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/>
+    <line x1="0" y1="100" x2="600" y2="100"/>
+    <line x1="0" y1="200" x2="600" y2="200"/>
+    <line x1="0" y1="300" x2="600" y2="300"/>
+    <line x1="0" y1="400" x2="600" y2="400"/>
+    <line x1="0" y1="500" x2="600" y2="500"/>
+  </g>
+
+  <!-- Category & Brand Header Ribbon -->
+  <g transform="translate(40, 45)">
+    <rect x="0" y="0" width="140" height="24" rx="12" fill="#0B3D2E" stroke="#16A36A" stroke-width="1.5"/>
+    <text x="70" y="16" text-anchor="middle" fill="#7EE2A8" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="bold" letter-spacing="1">REVORA ATHLETICS</text>
+  </g>
+
+  <g transform="translate(430, 45)">
+    <rect x="0" y="0" width="130" height="24" rx="6" fill="#07110D" stroke="#0B3D2E" stroke-width="1.5"/>
+    <text x="65" y="16" text-anchor="middle" fill="#7EE2A8" font-family="monospace" font-size="11" font-weight="bold">REV-ACC-19</text>
+  </g>
+
+  <!-- Central Visual Vector Object -->
+  
+            <g transform="translate(190, 160) scale(1.05)">
+                <!-- Trail Hydration Vest / Gear Pack -->
+                <path d="M 130 70 L 170 90 L 170 240 L 120 230 L 100 150 Z" fill="url(#acc-grad)"/>
+                <path d="M 270 70 L 230 90 L 230 240 L 280 230 L 300 150 Z" fill="url(#acc-grad)"/>
+                <!-- Chest Straps -->
+                <rect x="160" y="130" width="80" height="10" rx="3" fill="#16A36A"/>
+                <rect x="160" y="170" width="80" height="10" rx="3" fill="#16A36A"/>
+                <!-- Soft Flasks -->
+                <rect x="135" y="130" width="22" height="60" rx="8" fill="#7EE2A8" opacity="0.9"/>
+                <rect x="243" y="130" width="22" height="60" rx="8" fill="#7EE2A8" opacity="0.9"/>
+            </g>
+        
+
+  <!-- Footer Product Card Container -->
+  <g transform="translate(40, 480)">
+    <rect x="0" y="0" width="520" height="80" rx="18" fill="#0B3D2E" stroke="#16A36A" stroke-width="1.5" fill-opacity="0.95"/>
+    <text x="24" y="32" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" letter-spacing="-0.3">Waterproof Armband Phone Holder</text>
+    <text x="24" y="56" fill="#DDF8E8" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500">Accessories & Gear</text>
+    <g transform="translate(400, 18)">
+      <rect x="0" y="0" width="96" height="44" rx="10" fill="#07110D" stroke="#7EE2A8" stroke-width="1.5"/>
+      <text x="48" y="28" text-anchor="middle" fill="#7EE2A8" font-family="monospace" font-size="15" font-weight="bold">₹499</text>
+    </g>
+  </g>
+</svg>

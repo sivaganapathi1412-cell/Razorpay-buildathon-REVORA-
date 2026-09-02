@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="s2-bottle-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16A36A"/>
+      <stop offset="40%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#07110D"/>
+    </linearGradient>
+    <linearGradient id="s2-metal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DDF8E8"/>
+      <stop offset="50%" stop-color="#7EE2A8"/>
+      <stop offset="100%" stop-color="#16A36A"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="200" cy="335" rx="120" ry="20" fill="#000000" opacity="0.35"/>
+  <g transform="translate(110, 60) rotate(-6, 90, 150)">
+    <!-- Insulated Bottle Body -->
+    <rect x="40" y="100" width="100" height="180" rx="20" fill="url(#s2-bottle-grad)" stroke="#7EE2A8" stroke-width="3"/>
+    <!-- Bottle Neck -->
+    <rect x="60" y="70" width="60" height="30" rx="6" fill="#0B3D2E" stroke="#16A36A" stroke-width="2"/>
+    <!-- Stainless Cap & Carabiner Loop -->
+    <rect x="50" y="45" width="80" height="25" rx="10" fill="url(#s2-metal)" stroke="#07110D" stroke-width="2"/>
+    <path d="M 90 45 L 90 25 Q 90 15 105 15 Q 120 15 120 25 L 120 45" stroke="url(#s2-metal)" stroke-width="5" fill="none"/>
+    <!-- Silicone Grip Rings -->
+    <rect x="40" y="140" width="100" height="12" rx="3" fill="#07110D"/>
+    <rect x="40" y="165" width="100" height="12" rx="3" fill="#07110D"/>
+    <!-- Measurement Scale -->
+    <line x1="125" y1="120" x2="135" y2="120" stroke="#7EE2A8" stroke-width="2"/>
+    <line x1="120" y1="135" x2="135" y2="135" stroke="#7EE2A8" stroke-width="2"/>
+    <line x1="125" y1="190" x2="135" y2="190" stroke="#7EE2A8" stroke-width="2"/>
+    <line x1="120" y1="205" x2="135" y2="205" stroke="#7EE2A8" stroke-width="2"/>
+    <line x1="125" y1="220" x2="135" y2="220" stroke="#7EE2A8" stroke-width="2"/>
+  </g>
+</svg>

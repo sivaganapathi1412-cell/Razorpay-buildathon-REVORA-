@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="s1-case-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B3D2E"/>
+      <stop offset="70%" stop-color="#07110D"/>
+      <stop offset="100%" stop-color="#020806"/>
+    </linearGradient>
+    <linearGradient id="s1-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7EE2A8"/>
+      <stop offset="100%" stop-color="#16A36A"/>
+    </linearGradient>
+    <radialGradient id="s1-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#16A36A" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#16A36A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Ambient Soft Shadow -->
+  <ellipse cx="200" cy="330" rx="140" ry="22" fill="#000000" opacity="0.35"/>
+  <circle cx="200" cy="200" r="130" fill="url(#s1-glow)"/>
+  <!-- Charging Case Body (3D Perspective) -->
+  <g transform="translate(60, 100) rotate(5, 140, 100)">
+    <rect x="40" y="60" width="180" height="130" rx="40" fill="url(#s1-case-grad)" stroke="#16A36A" stroke-width="3"/>
+    <!-- Lid Seam -->
+    <path d="M 40 115 L 220 115" stroke="#7EE2A8" stroke-width="2" opacity="0.7"/>
+    <!-- LED Battery Level Bar -->
+    <rect x="110" y="130" width="40" height="5" rx="2.5" fill="url(#s1-accent)"/>
+    <!-- Earbud 1 (Floating Left) -->
+    <g transform="translate(30, -30) rotate(-18)">
+      <circle cx="60" cy="50" r="24" fill="#0B3D2E" stroke="#7EE2A8" stroke-width="2.5"/>
+      <rect x="52" y="65" width="16" height="45" rx="8" fill="url(#s1-case-grad)" stroke="#16A36A" stroke-width="2"/>
+      <circle cx="60" cy="50" r="10" fill="#7EE2A8" opacity="0.85"/>
+      <!-- Sound Vent -->
+      <line x1="45" y1="42" x2="52" y2="42" stroke="#DDF8E8" stroke-width="2"/>
+    </g>
+    <!-- Earbud 2 (Floating Right) -->
+    <g transform="translate(150, -40) rotate(22)">
+      <circle cx="60" cy="50" r="24" fill="#0B3D2E" stroke="#7EE2A8" stroke-width="2.5"/>
+      <rect x="52" y="65" width="16" height="45" rx="8" fill="url(#s1-case-grad)" stroke="#16A36A" stroke-width="2"/>
+      <circle cx="60" cy="50" r="10" fill="#7EE2A8" opacity="0.85"/>
+      <line x1="68" y1="42" x2="75" y2="42" stroke="#DDF8E8" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

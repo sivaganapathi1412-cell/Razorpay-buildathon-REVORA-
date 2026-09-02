@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="s1-bag-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16A36A"/>
+      <stop offset="50%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#07110D"/>
+    </linearGradient>
+    <linearGradient id="s1-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DDF8E8"/>
+      <stop offset="100%" stop-color="#7EE2A8"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="200" cy="335" rx="130" ry="20" fill="#000000" opacity="0.35"/>
+  <g transform="translate(80, 70) rotate(-4, 120, 150)">
+    <!-- Bag Handles -->
+    <path d="M 80 110 Q 80 30 120 30 Q 160 30 160 110" stroke="url(#s1-gold)" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <!-- Bag Main Geometry (3D Trapezoid) -->
+    <path d="M 40 100 L 200 100 L 220 260 L 20 260 Z" fill="url(#s1-bag-grad)" stroke="#7EE2A8" stroke-width="3"/>
+    <!-- Bag Side Flap Perspective Depth -->
+    <path d="M 200 100 L 235 125 L 250 270 L 220 260 Z" fill="#07110D" stroke="#16A36A" stroke-width="2.5"/>
+    <path d="M 40 100 L 200 100 L 235 125 L 75 125 Z" fill="#0B3D2E" opacity="0.8"/>
+    <!-- Revora Emblem Crest -->
+    <circle cx="120" cy="180" r="28" fill="#07110D" stroke="#7EE2A8" stroke-width="3"/>
+    <path d="M 108 180 L 132 180 M 120 168 L 120 192" stroke="#7EE2A8" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Subtle Tag -->
+    <rect x="145" y="130" width="30" height="42" rx="4" fill="#07110D" stroke="#DDF8E8" stroke-width="1.5" transform="rotate(15, 145, 130)"/>
+    <circle cx="158" cy="138" r="3" fill="#7EE2A8"/>
+  </g>
+</svg>
