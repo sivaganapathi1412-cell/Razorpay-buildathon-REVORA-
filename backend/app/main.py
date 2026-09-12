@@ -47,6 +47,18 @@ app.add_middleware(
 )
 
 
+from app.core.x402 import X402PaymentRequiredException
+
+
+@app.exception_handler(X402PaymentRequiredException)
+async def x402_exception_handler(request: Request, exc: X402PaymentRequiredException):
+    return JSONResponse(
+        status_code=exc.status_code,
+        headers=exc.headers,
+        content=exc.detail if isinstance(exc.detail, dict) else {"message": exc.detail},
+    )
+
+
 @app.exception_handler(RevoraException)
 async def revora_exception_handler(request: Request, exc: RevoraException):
     logger.warning(f"RevoraException: {exc.detail} (Code: {exc.error_code})")

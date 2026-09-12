@@ -35,6 +35,17 @@ class Settings(BaseSettings):
     DEFAULT_AUTO_RECOVERY_INCENTIVE_MAX: float = 100.0
     DEFAULT_REQUIRE_APPROVAL_ABOVE_AMOUNT: float = 5000.0
 
+    # PayForAPI x402 v2 Settings (Base USDC)
+    X402_ENABLED: bool = True
+    X402_NETWORK: str = "base"
+    X402_USDC_ASSET: str = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"  # Canonical Base USDC
+    X402_PAY_TO: str = "0x0000000000000000000000000000000000000000"  # Safe placeholder recipient
+    X402_RECOMMENDATIONS_PRICE_ATOMIC: str = "10000"  # 0.01 USDC (6 decimals)
+    X402_RECOVERY_PRICE_ATOMIC: str = "20000"  # 0.02 USDC (6 decimals)
+    X402_MAX_TIMEOUT_SECONDS: int = 60
+    X402_FACILITATOR_URL: str = ""
+    X402_MODE: str = "development"  # development | production | test
+
     # CORS
     BACKEND_CORS_ORIGINS: List[str] = [
         "http://localhost:3000",

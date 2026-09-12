@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 from app.api.v1.endpoints import (
+    agent,
     ai_shopping,
     analytics,
     approvals,
@@ -19,6 +20,7 @@ from app.api.v1.endpoints import (
 
 api_router = APIRouter()
 api_router.include_router(health.router, tags=["System Health"])
+api_router.include_router(agent.router, prefix="/agent", tags=["External Agent API (x402 v2)"])
 api_router.include_router(auth.router, prefix="/auth", tags=["Merchant Authentication"])
 api_router.include_router(customer_auth.router, prefix="/customer/auth", tags=["Customer Authentication"])
 api_router.include_router(customer_auth.router, prefix="/customer", tags=["Customer Account & Orders"])
